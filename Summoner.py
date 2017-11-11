@@ -16,7 +16,7 @@ region_dic = {'BR'	:	'br1.api.riotgames.com',
                 'PBE'	:	'pbe1.api.riotgames.com'}
 
 
-API_KEY = 'RGAPI-9a7976e6-5bd8-4437-ab3f-480a5989943b'
+API_KEY = ''
 
 
 class Summoner: 
