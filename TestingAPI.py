@@ -17,14 +17,12 @@ def take_input() -> list:
             take_input()
     return l
 
-API_KEY = ''
 
 
 
 if __name__ == '__main__':
     region ='na'
-    summ_id = 35832905
-    s = Summoner('konohakushlord', 'na')
+    example_sum = Summoner('konohakushlord', 'na')
     
     l = take_input()
     for i in l:
