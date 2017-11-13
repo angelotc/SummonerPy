@@ -1,2 +1,2 @@
 # ShouldIDodge
-Gives statistics of your team's recent ranked history on any LoL server.
+Gives win-rate statistics of your team's recent ranked history given usernames and any LoL server.
