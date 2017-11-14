@@ -8,4 +8,6 @@ Gives win-rate statistics of your team's recent ranked history given usernames o
 
 
 ![alt text](https://github.com/angelotc/ShouldIDodge/blob/master/static/shouldidodge.PNG)
+ 
+ 
  by Angelo Cortez (UCI) and Elyas Mehtabuddin (UCSD)
