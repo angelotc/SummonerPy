@@ -24,9 +24,10 @@ if __name__ == '__main__':
 
     
     l = take_input()
-    print(l)
+
     for i in l:
         
         s = Summoner(i, 'na')
         s.request_recent_ranked_games()
         s.recent_ranked_win_percentage()
+        s.print_rank()

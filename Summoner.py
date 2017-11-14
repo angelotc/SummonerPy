@@ -2,6 +2,9 @@ import requests
 import urllib.parse
 import json
 
+API_KEY = '<your_key_goes_here>'
+
+
 region_dic = {'BR'	:	'br1.api.riotgames.com',
                 'EUNE'	: 	'eun1.api.riotgames.com',
                 'EUW'	:	'euw1.api.riotgames.com',
@@ -17,7 +20,7 @@ region_dic = {'BR'	:	'br1.api.riotgames.com',
 
 #whatareOURodds
 
-API_KEY = 'RGAPI-3898f0ba-9693-420e-a271-bdb966a0334b'
+
 
 class Summoner: 
     def __init__(self, summoner_name: str, region: str):
@@ -107,4 +110,6 @@ class Summoner:
             except:
                 print('Error.')
 
+    def print_rank(self):
+        return(self.rank)
     
