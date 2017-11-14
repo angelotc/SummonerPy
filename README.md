@@ -1,5 +1,6 @@
 # ShouldIDodge
 Gives win-rate statistics of your team's recent ranked history given usernames on any LoL server.
+by Angelo Cortez (UCI) and Elyas Mehtabuddin (UCSD)
 # Instructions:
 1. Insert API Key into Summoner.Py
 2. Set region on TestingAPI.py according to the dictionary in Summoner.py.
