@@ -2,7 +2,7 @@ import requests
 import urllib.parse
 import json
 
-API_KEY = '<your_key_goes_here>'
+API_KEY = '<your-key-here>'
 
 
 region_dic = {'BR'	:	'br1.api.riotgames.com',
@@ -52,11 +52,10 @@ class Summoner:
                 
                 self.rank = '{} {} {} LP'.format(json_object[0]['tier'] , json_object[0]['entries'][0]['rank'] ,
                                            str(json_object[0]['entries'][0]['leaguePoints']))
-                return self.rank
+                
             except:
-                print( json_object['status']['message'])
+                self.rank = 'No Rank'
 
-        return self.rank
 
     def recent_ranked_win_percentage(self):
         '''Takes self.last_ranked_games and finds the winrate'''
@@ -111,5 +110,4 @@ class Summoner:
                 print('Error.')
 
     def print_rank(self):
-        return(self.rank)
-    
+        print(self.rank + '\n')

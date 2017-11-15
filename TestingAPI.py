@@ -30,4 +30,5 @@ if __name__ == '__main__':
         s = Summoner(i, 'na')
         s.request_recent_ranked_games()
         s.recent_ranked_win_percentage()
+        s.request_rank()
         s.print_rank()
