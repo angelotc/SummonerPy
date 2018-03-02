@@ -1,5 +1,5 @@
 # LobbyStats
-Gives win-rate statistics of your team's recent ranked history given usernames on any LoL server.
+A Python 3 wrapper for the League of Legends API. Summoner.py gives win-rate statistics of your team's recent ranked history given usernames on any LoL server.
 
 # Requirements: 
 Python 3+
