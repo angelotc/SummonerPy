@@ -4,7 +4,8 @@ import json
 
 API_KEY = '<your-key-here>'
 
-
+# Put the region key in your Summoner object when creating a summoner. 
+# E.g  = Summoner("sumName", 'na')
 region_dic = {'BR'	:	'br1.api.riotgames.com',
                 'EUNE'	: 	'eun1.api.riotgames.com',
                 'EUW'	:	'euw1.api.riotgames.com',
@@ -18,7 +19,6 @@ region_dic = {'BR'	:	'br1.api.riotgames.com',
                 'RU'	:	'ru.api.riotgames.com',
                 'PBE'	:	'pbe1.api.riotgames.com'}
 
-#whatareOURodds
 
 
 
