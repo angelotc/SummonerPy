@@ -26,9 +26,18 @@ if __name__ == '__main__':
     l = take_input()
 
     for i in l:
-        
+
+        # Instantiate Summoner
         s = Summoner(i, 'na')
-        s.request_recent_ranked_games()
+
+        # Populate recent_ranked_games
+        s.get_recent_ranked_games()
+
+        # Calculate recent recent ranked win percentage
         s.recent_ranked_win_percentage()
-        s.request_rank()
+
+        # Populate the rank within the Summoner object
+        s.get_rank()
+
+        # Print the rank frm the Summoner object
         s.print_rank()

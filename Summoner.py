@@ -41,7 +41,7 @@ class Summoner:
         except:
             print( json_object['status']['message'])
 
-    def request_rank(self)->str:
+    def get_rank(self)->str:
         ''' Finds the rank of a summoner. (e.g. Diamond V 18LP) '''
         if self.rank == None:         
             request_url =  '{}/lol/league/v3/leagues/by-summoner/{}?api_key={}'.format(self.base_url,  str(self.summoner_id) , API_KEY)
@@ -93,7 +93,7 @@ class Summoner:
             print('{} has had no ranked games in the last 20 games.'.format(self.summoner_name))
 
     
-    def request_recent_ranked_games(self):
+    def get_recent_ranked_games(self):
         ''' Returns a list of ranked games in the past 20 games in a list.'''
         if self.base_url and self.account_id:
             try:
@@ -103,7 +103,7 @@ class Summoner:
                 json_object = response.json()
                 response.close()
                 for match in json_object['matches']:
-                    if match['queue'] == 420:
+                    if match['queue'] == 420: # If match is solo queue ranked
                         ranked_id_list.append(match['gameId'])
                 self.last_ranked_games = ranked_id_list
             except:
