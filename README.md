@@ -1,4 +1,4 @@
-![alt text](https://github.com/angelotc/ShouldIDodge/blob/master/static/Summoner.PNG)
+![alt text](https://github.com/angelotc/ShouldIDodge/blob/master/static/Summoner.png)
 Summoner.py is a Python 3 wrapper for the League of Legends API. TestingAPI.py gives win-rate statistics of your team's recent ranked history given usernames on any LoL server.
 
 # Requirements: 
